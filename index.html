@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 style="text-align:center; font-size: 40px;">Calculator App</h2>
+    <main>
+        <div class="calc">
+            <tr>
+           <td colspan="3"> <input type="text" id="result" class="screen" style="text-align: right;"></td>
+        </tr>
+            <div class="buttons">
+                <div class="button">
+                    <input type="button"  id="c" value="AC" onClick="display('AC')">
+                    <input type="button" id="c" value="%" onClick="display('%')">
+                    <input type="button" id="c" value="/" onClick="display('/')">
+                    <input type="button" id="d" value="*" onClick="display('*')">
+                </div>
+                <!-- Second Line -->
+                <div class="button">
+                    <input type="button" value="7" onClick="display('7')">
+                    <input type="button" value="8" onClick="display('8')">
+                    <input type="button" value="9" onClick="display('9')">
+                    <input type="button" id="d" value="-" onClick="display('-')">
+                </div>
+                <!-- Thrid Line -->
+                <div class="button">
+                    <input type="button"  value="4" onClick="display('4')">
+                    <input type="button" value="5" onClick="display('5')">
+                    <input type="button" value="6" onClick="display('6')">
+                    <input type="button" id="d" value="+" onClick="display('+')">
+                </div>
+                <!-- Fourth Line -->
+                <div class="button">
+                    <input type="button" value="1" onClick="display('1')">
+                    <input type="button" value="2" onClick="display('2')">
+                    <input type="button" value="3" onClick="display('3')">
+                    <input type="button" id="d" value="0" onClick="display('0')">
+                </div>
+                <!-- Last Line -->
+                <div class="submit">
+                    <input type="button" value="=" class="button equal-sign" onClick="solve()">
+                    <input type="button" value="c" onclick="clearScreen()" class="clear">
+                    <input type="button" value="." class="operator operators" onClick="display('.')">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
